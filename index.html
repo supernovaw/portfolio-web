@@ -17,7 +17,7 @@
       Hello, my name is <span title="Russian: Дмитрий Сигида (Dmitry Sigida)">Dmytro</span>.
       I am a self taught programmer. Here, I've collected some of my most remarkable works since
       the start of my programming journey in late 2016, when I was eleven. I made my first money off of
-      programming when I was 15. I've spent most time coding in Java, recently switching to
+      programming when I was 15. Most of that time I've been coding in Java, recently switching to
       JavaScript to develop websites using ReactJS.
     </div>
     <div>
@@ -46,9 +46,9 @@
       </div>
       <div class="display"><img src="assets/video/polygon_preview.jpg"></div>
       <div class="description">
-        I made this after learning to do the most basic things in Java. It has inaccurate precision,
+        I made this after learning to do the most basic things in Java. It has low precision,
         but at the time it surprised me that it even worked. I didn't even know to repaint
-        the screen which resulted in weird artifacts that were like sorcery to me back then.
+        the screen which resulted in weird artifacts that looked like sorcery to me back then.
         <div><a href="assets/files/n-sided-polygon.7z">.jar + decompiled (11 KiB)</a></div>
       </div>
     </div>
@@ -72,7 +72,7 @@
       </div>
       <div class="display"><img src="assets/video/game_preview.jpg"></div>
       <div class="description">
-        There, I put the OOP basics I'd learnt to use
+        There, I put to use the OOP basics I'd learnt
         <div><a href="assets/files/first-game.7z">.jar + decompiled (18 KiB)</a></div>
       </div>
     </div>
@@ -88,7 +88,7 @@
       </div>
       <div class="description">
         I wanted to get a step closer to understanding how my favourite game worked. I had
-        no idea what a GPU even does, so it was very slow on a CPU in 1 thread. However,
+        no idea what a GPU even does, so it was very slow on 1 CPU thread. However,
         I could already move and look around a couple of hardcoded objects in 3 dimensions.
         I couldn't find the source code from this screenshot.
         (yes, I guess I tried coding in Comic Sans back then)
@@ -103,12 +103,12 @@
       <div class="display"><img src="assets/video/kanji1_preview.jpg"></div>
       <div class="description">
         One day, I came up with an idea of how to compare kanji (Chinese/Japanese characters).
-        I was frightened by the seeming complexity of such a task, but I gave my idea a try,
-        and, surprisingly to me, it did work. I managed to create a recognition algorithm for
+        I was frightened by the seeming complexity of such a task, but I gave my idea a try
+        and surprisingly to me, it did work. I managed to create a recognition algorithm for
         written kanji. As of 2022, computer vision, AI and image recognition still remain like
         a gloomy forest to me. The algorithm I came up with is much simpler than alphabetic
         scripts recognition due to the fact that kanji have a fixed number, order and direction
-        of strokes, and that they are written in real time, allowing the algorithm to know the
+        of strokes, and that they are written in real time, allowing the algorithm to easily know the
         order and directions of strokes. Each stroke is compared 1-by-1 along with differences
         in stroke positions for each character with the same number of strokes. An answer is
         considered correct if the most similar kanji in the database is the one that user was
@@ -173,9 +173,9 @@
         like colour that are triggered on hover, for example. I even made a text field class where
         I did my best to implement caret navigation and typing. It did later help me realise how
         wasteful it is to ignore already existing frameworks that can take care of countless things,
-        such as keyboard input & layouts, HiDPI, system themes, RTL, animations and optimisation.
-        However it did look special and personal, just the way I liked in a lot of ways, and I'm
-        still happy I made it, though I wouldn't do it again.
+        such as keyboard input & layouts, RTL, HiDPI, system themes, animations and optimisation.
+        However it did look special and personal, in a lot of ways just the way I liked, and I'm
+        still happy I that I had made it, though I wouldn't do it again.
         <div>
           <a href="assets/files/kanji-app_v1.0.1.jar">.jar (18 MiB)</a>
           <a href="https://github.com/supernovaw/kanji-cards">source on GH</a>
@@ -214,7 +214,7 @@
         Through lucky circumstances, I was invited to work on a couple of Android projects when I was
         only 15. I developed frontend applications which farmers used to collect and centralise various
         data about fields. Shown on the screenshots is viewing and creating (marking) fields atop
-        imagery by Google Maps.
+        imagery from Google Maps.
       </div>
     </div>
 
@@ -228,14 +228,14 @@
         I was thinking a lot about my few year-old ideas about filtering an output image to create an
         illusion of the screen being constantly pointed at the viewer. I finally implemented them in
         October 2021. The setup should ideally require good 3D tracking devices, anaglyph glasses and
-        a giant display (probably a white wall and a projector). I didn't have any of that, so I only
-        made more of a "proof of concept." In order to track the viewer's location, I made an Android
-        application (on the same phone on which the video was recorded) to track its rotation. The
+        a giant display (probably a white wall and a projector). I didn't have any of that, so I made
+        no more than just a "proof of concept." In order to track the viewer's location, I made an Android
+        application (used on the same phone on which the video was recorded) to track its rotation. The
         calculations assumed that the distance between the centre of the screen and the camera is
         constant, as well as the camera being pointed at the screen. It was the easiest to get
         approximate phone location this way, but of course it wasn't very accurate, and I didn't even
         have a flat screen, Wi-Fi delay was also a factor. However I still enjoyed it very much. I'm
-        not that good with math anymore as it was more of a temporary hobby that I don't do so much now.
+        not that good with math anymore as it was more of a temporary hobby that I don't do as much now.
         <div><a href="assets/files/perspective-distortions.7z">Android-side source + PC-side source (95 KiB)</a></div>
       </div>
     </div>
@@ -260,17 +260,18 @@
 
   </div>
 
-  <div class="fullscreen-display" mode="unset">
-    <img src="">
-    <video src="" controls loop autoplay></video>
-  </div>
-
   <a class="contact-telegram" href="https://t.me/supernovaw" target="_blank" title="Contact me in Telegram @supernovaw">
     <img src="assets/logo-tg.svg" draggable="false" width="32" height="32">
   </a>
   <a class="contact-vk" href="https://vk.com/supernovaw" target="_blank" title="You can check my VK @supernovaw">
     <img src="assets/logo-vk.svg" draggable="false" width="32" height="32">
   </a>
+
+  <div class="fullscreen-display" mode="unset">
+    <img src="">
+    <video src="" controls autoplay></video>
+  </div>
+
 </body>
 
 </html>
