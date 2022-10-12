@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio@supernovaw</title>
+  <link rel="stylesheet" href="master.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="contact-telegram" href="https://t.me/supernovaw" target="_blank" title="Contact me in Telegram @supernovaw">
+    <img src="assets/logo-tg.svg" draggable="false" width="32" height="32" />
+  </a>
+  <a class="contact-vk" href="https://vk.com/supernovaw" target="_blank" title="You can check my VK @supernovaw">
+    <img src="assets/logo-vk.svg" draggable="false" width="32" height="32" />
+  </a>
+
+  <div class="header">
+    <img src="assets/photo_2021-sep.jpg" alt="Me in September 2021" title="Me in September 2021" />
+    <div>
+      Hello, my name is <span title="Russian: Дмитрий Сигида (Dmitry Sigida)">Dmytro</span>.
+      I am a self taught programmer. Here, I've collected some of my most remarkable works since
+      the start of my programming journey in late 2016, when I was eleven. I made my first money off of
+      programming when I was 15 (in 2020). I've spent most time coding in Java, recently switching to
+      JavaScript to develop websites using ReactJS.
+    </div>
+    <div>
+      I enjoy learning and I never plan to stop. I'm currently learning Python, I want to learn C, C++
+      and Rust. Besides programming I also love learning languages, I'm learning Japanese and Ukrainian.
+    </div>
+  </div>
+
+  <div class="portfolio-collection">
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">My first attempts at programming</div>
+        <div class="date">2016, Dec</div>
+      </div>
+      <div class="display"><img src="assets/image/first-attempts.jpg" /></div>
+      <div class="description">
+        I got curious with Java when playing Minecraft, so I began trying to make something
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">n-sided polygon</div>
+        <div class="date">2017, Apr</div>
+      </div>
+      <div class="display"><img src="assets/video/polygon_preview.jpg" /></div>
+      <div class="description">
+        I made this after learning to do the most basic things in Java. It has inaccurate precision,
+        but at the time it surprised me that it even worked. I didn't even know to repaint
+        the screen which resulted in weird artefacts that were like sorcery to me back then.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Painting with text characters</div>
+        <div class="date">2017, Apr</div>
+      </div>
+      <div class="display"><img src="assets/video/chars_preview.jpg" /></div>
+      <div class="description">
+        Another very simple program that I enjoyed making at the time
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">A very simple game</div>
+        <div class="date">2017, May</div>
+      </div>
+      <div class="display"><img src="assets/video/game_preview.jpg" /></div>
+      <div class="description">
+        There, I put the OOP basics I'd learnt to use
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Basic 3D objects display</div>
+        <div class="date">2017, Jul</div>
+      </div>
+      <div class="display">
+        <img src="assets/image/3d_1.jpg" />
+        <img src="assets/image/3d_2.jpg" />
+      </div>
+      <div class="description">
+        I wanted to get a step closer to understanding how my favourite game worked. I had
+        no idea what a GPU even does, so it was very slow on a CPU in 1 thread. However,
+        I could already move and look around a couple of hardcoded objects in 3 dimensions.
+        I couldn't find the source code from this screenshot.
+        (yes, I guess I tried coding in Comic Sans back then)
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Chinese characters recognition algorithm</div>
+        <div class="date">2019, May</div>
+      </div>
+      <div class="display"><img src="assets/video/kanji1_preview.jpg" /></div>
+      <div class="description">
+        One day, I came up with an idea of how to compare kanji (Chinese/Japanese characters).
+        I was frightened by the seeming complexity of such a task, but I gave my idea a try,
+        and, surprisingly to me, it did work. I managed to create a recognition algorithm for
+        written kanji. As of 2022, computer vision, AI and image recognition still remain like
+        a gloomy forest to me. The algorithm I came up with is much simpler than alphabetic
+        scripts recognition due to the fact that kanji have a fixed number, order and direction
+        of strokes, and that they are written in real time, allowing the algorithm to know the
+        order and directions of strokes. Each stroke is compared 1-by-1 along with differences
+        in stroke positions for each character with the same number of strokes. An answer is
+        considered correct if the most similar kanji in the database is the one that user was
+        asked to write. Also, because I made it for a kanji-learning program, I did not need
+        to attempt interpreting wrongly written characters. I get a lot of credit when I tell
+        people about it, but it always feels to me that they overestimate the difficulty of the
+        task I accomplished.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Travelling salesman problem implementation</div>
+        <div class="date">2019, Jun</div>
+      </div>
+      <div class="display">
+        <img src="assets/image/tsp_1.jpg" />
+        <img src="assets/image/tsp_2.jpg" />
+      </div>
+      <div class="description">
+        I made this before the next item of this portfolio, which required an algorithm for
+        consequently traversing every line in a picture. I did not aim for an efficient solution,
+        all I needed was to avoid looping over the same lines too many times. However, it was
+        still pretty complicated to make, and I was really happy when I got it to work.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Drawing images with epicylces, Fourier transform</div>
+        <div class="date">2019, Jun</div>
+      </div>
+      <div class="display"><img src="assets/video/fourier_preview.jpg" /></div>
+      <div class="description">
+        This, so far, is probably the most fascinating-looking program I've made, thanks to the
+        beauty of mathematics which I was keen on at the time. Any looped 2D trajectory of any
+        complexity can be represented using epicycles which give more and more precision. That
+        concept is essential for audio compression and much more. This program processes any
+        shape (which can be derived from a drawn image automatically using the program above)
+        and builds a chain of epicycles, whose number can be dynamically changed, affecting the
+        accuracy of the resulting trail.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Kanji cards app</div>
+        <div class="date">2019, Jul</div>
+      </div>
+      <div class="display"><img src="assets/video/kanji2_preview.jpg" /></div>
+      <div class="description">
+        This is the program I've developed with most passion. It uses the recognition algorithm
+        from a project I've made earlier, with much more focus on user interface. It was still
+        a couple years before I had realised how important frameworks are for serious applications.
+        Back then, I was wanting to develop everything on my own from scratch, only using built-in
+        Java runtime libraries. And so I made an element structure with OOP that was displayed
+        within Java's Swing framework, which I needed to get access to basic graphics operations
+        and event listeners. I came up with how to program transition animations on properties
+        like colour that are triggered on hover, for example. I even made a text field class where
+        I did my best to implement caret navigation and typing. It did later help me realise how
+        wasteful it is to ignore already existing frameworks that can take care of countless things,
+        such as keyboard input & layouts, HiDPI, system themes, RTL, animations and optimisation.
+        However it did look special and personal, just the way I liked in a lot of ways, and I'm
+        still happy I made it, though I wouldn't do it again.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Time tracker</div>
+        <div class="date">2020, Jan</div>
+      </div>
+      <div class="display"><img src="assets/video/tt_preview.jpg" /></div>
+      <div class="description">
+        I've spent almost the entire 2020 tracking what I spend my time on, for what I've developed
+        a program. It represents everything on a timeline that can be zoomed in and out to any level.
+        It allowed me to see exactly how I spent my days. I was really obsessed with managing my time,
+        and by the end of the year I gave up on it because the pressure I was putting on myself was
+        not helping. But I still like that idea and I'm planning to reimplement it in a React web
+        application to continue doing it to strive for the least time spent on semiconscious and
+        self-harming behaviour.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">My first work</div>
+        <div class="date">2020, Aug</div>
+      </div>
+      <div class="display">
+        <img src="assets/image/fields_1.jpg" />
+        <img src="assets/image/fields_2.jpg" />
+      </div>
+      <div class="description">
+        Through lucky circumstances, I was invited to work on a couple of Android projects when I was
+        only 15. I developed frontend applications which farmers used to collect and centralise various
+        data about fields. Shown on the screenshots is viewing and creating (marking) fields atop
+        imagery by Google Maps.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Perspective distortions</div>
+        <div class="date">2021, Oct</div>
+      </div>
+      <div class="display"><img src="assets/video/perspective_preview.jpg" /></div>
+      <div class="description">
+        I was thinking a lot about my few year-old ideas about filtering an output image to create an
+        illusion of the screen being constantly pointer at the viewer. I finally implemented them in
+        October 2021. The setup should ideally require good 3D tracking devices, anaglyph glasses and
+        a giant display (probably a white wall and a projector). I didn't have any of that, so I only
+        made more of a "proof of concept." In order to track the viewer's location, I made an Android
+        application (on the same phone on which the video was recorded) to track its rotation. The
+        calculations assumed that the distance between the centre of the screen and the camera is
+        constant, as well as the camera being pointed at the screen. It was the easiest to get
+        approximate phone location this way, but of course it wasn't very accurate, and I didn't even
+        have a flat screen, Wi-Fi delay was also a factor. However I still enjoyed it very much. I'm
+        not that good with math anymore as it was more of a temporary hobby that I don't do so much now.
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="title">
+        <div class="name">Side-by-side photo selector</div>
+        <div class="date">2022, Sep</div>
+      </div>
+      <div class="display">
+        <img src="assets/video/qs_preview.jpg" />
+        <img src="assets/image/qs.jpg" />
+      </div>
+      <div class="description">
+        This one is not so complex, it just was a lot of pain with CSS. I've made this app to go through
+        all of my photos, compressed with different levels of quality to see where I want to preserve
+        more detail and where to save more space. I ended up decreasing the total size of my gallery
+        by a factor of a dozen or two (given poor initial compression).
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fullscreen-display" mode="unset">
+    <img src="" />
+    <video src="" controls loop autoplay>
+  </div>
+</body>
+
+</html>

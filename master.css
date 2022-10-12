@@ -1,0 +1,168 @@
+html,
+body {
+  background: #111;
+  color: white;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.contact-telegram {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  left: 30px;
+  top: 8px;
+}
+
+.contact-vk {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  left: 70px;
+  top: 8px;
+}
+
+.header {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 8px;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.header span[title] {
+  text-decoration: underline dashed #888 1px;
+}
+
+.header>div {
+  margin-top: 8px;
+}
+
+.portfolio-collection {
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.portfolio-item {
+  position: relative;
+  background-color: #171717;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.title .date {
+  font-size: 14px;
+  width: 6em;
+  text-align: end;
+}
+
+.title .name {
+  padding-inline-start: 6em;
+  flex: 1;
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden
+}
+
+.display img {
+  height: 100px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.fullscreen-display {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #0007;
+  display: flex;
+
+  /* transition: opacity 0.15s ease-out; */
+  animation-name: fade-out;
+  animation-duration: .15s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.fullscreen-display.shown {
+  animation-name: fade-in;
+}
+
+.fullscreen-display img,
+.fullscreen-display video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  display: none;
+}
+
+.fullscreen-display[mode="image"] img {
+  display: block;
+}
+
+.fullscreen-display[mode="video"] video {
+  display: block
+}
+
+.fullscreen-display[mode="unset"] {
+  display: none;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
